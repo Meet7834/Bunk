@@ -5,8 +5,7 @@
     margin-right: 17.5%;
 }
 
-
-.main-heading{
+.main-heading {
     text-align: center;
     margin-top: 11.5%;
 }
@@ -15,4 +14,8 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+#Temp {
+    color: aquamarine;
 }
