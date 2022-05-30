@@ -27,21 +27,28 @@
             <div class="border border-dark border-2 rounded shadow main-div align-items-center">
                 <form class="row align-items-center">
                     <div class="row my-3 mx-1">
-                        <label for="AttendedB" class="col-form-label col">Lectures Attended</label>
+                        <label for="AttendedB" class="col-form-label col">Lectures Attended*</label>
                         <div class="col">
                             <input type="number" min="0" class="form-control " id="AttendedB" placeholder="Attended" required>
                         </div>
                     </div>
                     <div class="row my-3 mx-1">
-                        <label for="TotalB" class="col-form-label col">Total Lectures</label>
+                        <label for="TotalB" class="col-form-label col">Total Lectures*</label>
                         <div class="col">
                             <input type="number" min="0" class="form-control " id="TotalB" placeholder="Total" required>
                         </div>
                     </div>
                     <div class="row my-3 mx-1">
-                        <label for="targetAtd" class="col-form-label col">Target Attendence</label>
+                        <label for="targetAtd" class="col-form-label col">Target Attendence (Optional)</label>
                         <div class="col">
-                            <input type="number" min="0" class="form-control" id="targetAtd" placeholder="Target Attendence">
+                            <input type="number" min="0" class="form-control" id="targetAtd" placeholder="Default is 75%">
+                        </div>
+                    </div>
+                    <div class="row my-3 mx-1">
+                        <label for="moreBunk" class="col-form-label col">Number of classes you want to Bunk (Optional) </label>
+                        <div class="col">
+                            <input type="number" min="0" class="form-control" id="moreBunk" placeholder="Want to Bunk">
+                            <label for="" class="warning">Warning: Do not use if you want number of classes you can bunk.</label>
                         </div>
                     </div>
                     <div class="centre-button">

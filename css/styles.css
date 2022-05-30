@@ -7,7 +7,12 @@
 
 .main-heading {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
+}
+
+.warning {
+    font-size: 0.8rem;
+    color: rgb(184, 78, 78);
 }
 
 .centre-button {
@@ -36,7 +41,7 @@
 } */
 
 .footer{
-    padding: 7% 0 0 0;
+    padding: 5% 0 0 0;
     text-align: center;
 }
 
