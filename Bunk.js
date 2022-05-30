@@ -39,7 +39,7 @@ btn.addEventListener("click", function() {
         per = (atn / total) * 100;
 
         output.innerHTML = `You can bunk ${bunk} classes.`;
-        output2.innerHTML =  `Your attendence will be ${per}.`;
+        output2.innerHTML =  `After that your attendence will be ${per.toFixed(2)}.`;
 
     } else {
         while (per < target){
@@ -50,7 +50,7 @@ btn.addEventListener("click", function() {
         }
         per = (atn/total) * 100;
         output.innerHTML = `${extAtn} classes lagani padegi.`;
-        output2.innerHTML =  `Your attendence will be ${per}.`;
+        output2.innerHTML =  `After that your attendence will be ${per.toFixed(2)}.`;
 
 
     }
