@@ -1,5 +1,6 @@
 const btn = document.querySelector("#btn1");
 const output = document.querySelector("#outputTxT")
+const output2 = document.querySelector('#outputTxT2')
 
 let per;
 
@@ -37,7 +38,8 @@ btn.addEventListener("click", function() {
         total--;
         per = (atn / total) * 100;
 
-        output.innerHTML = `You can bunk ${bunk} classes. \n And your attendence will be ${per}`;
+        output.innerHTML = `You can bunk ${bunk} classes.`;
+        output2.innerHTML =  `Your attendence will be ${per}.`;
 
     } else {
         while (per < target){
@@ -46,8 +48,9 @@ btn.addEventListener("click", function() {
             total++;    
             per = (atn/total) * 100;
         }
-        output.innerHTML = `${extAtn} classes lagani padegi.
-        And your attendence will be ${per}`;
+        per = (atn/total) * 100;
+        output.innerHTML = `${extAtn} classes lagani padegi.`;
+        output2.innerHTML =  `Your attendence will be ${per}.`;
 
 
     }
