@@ -7,7 +7,7 @@
 
 .main-heading {
     text-align: center;
-    margin-top: 11.5%;
+    margin-top: 10%;
 }
 
 .centre-button {
@@ -16,6 +16,24 @@
     margin-top: 1rem;
 }
 
-#Temp {
+.output-result{
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* #Temp {
     color: aquamarine;
+} */
+
+.footer{
+    padding: 7% 0 0 0;
+    text-align: center;
+}
+
+.credit{
+    display: inline;
+    /* font-size: 1rem; */
 }

@@ -5,38 +5,54 @@ let per;
 
 
 btn.addEventListener("click", function() {
+    let target = 75;
     let bunk = 0;
+    let extAtn = 0;
+    // console.log(target);
     var atn = parseInt(document.querySelector("#AttendedB").value);
     var total = parseInt(document.querySelector("#TotalB").value);
+    target = parseInt(document.querySelector("#targetAtd").value);
+
+    // console.log(target);
+
+    if (isNaN(target)) {
+        target=75;
+    }
 
     // console.log(atn);
     // console.log(total);
 
     per = (atn / total) * 100;
 
-    console.log(per);
+    // console.log(per);
 
-    if (per >= 75) {
-        while (per >= 75) {
+    if (per >= target) {
+        while (per >= target) {
             bunk = bunk + 1;
             total = total + 1;
             per = (atn / total) * 100;
             // console.log(bunk)
         };
         bunk--;
+        total--;
+        per = (atn / total) * 100;
 
-        // if (per >= 75){
-        //     cout << "You can bunk " <<  bunk << " classes" << endl;
-        //     cout << "And Your Attendence will be: " << setprecision(4) << per << " %"<< endl;
-        // }
-        // else if (per < 75){
-        //     per = (atn*100) / (total-1);
-        //     cout << "You can bunk " <<  bunk-1 << " classes" << endl;
-        //     cout << "And Your Attendence will be: " << setprecision(4) << per << " %"<< endl;
-        // }
-    };
+        output.innerHTML = `You can bunk ${bunk} classes. \n And your attendence will be ${per}`;
 
-    output.innerHTML = `You can bunk ${bunk} classes.`;
+    } else {
+        while (per < target){
+            atn++;
+            extAtn++;
+            total++;    
+            per = (atn/total) * 100;
+        }
+        output.innerHTML = `${extAtn} classes lagani padegi.
+        And your attendence will be ${per}`;
+
+
+    }
+
+    
     // const Tlbunk = document.createElement('h3');
     // Tlbunk.innerHTML = `You can bunk ${bunk} classes.`;
     // console.log(Tlbunk);
