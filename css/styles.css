@@ -41,7 +41,7 @@
 } */
 
 .footer{
-    padding: 3% 0 0 0;
+    padding: 4% 0 0 0;
     text-align: center;
 }
 
@@ -50,9 +50,6 @@
     /* font-size: 1rem; */
 }
 
-.middle {
-    display: none;
-}
 
 @media (max-width: 576px){
     .main-div{
@@ -68,5 +65,9 @@
 
     .credit {
         display: block;
+    }
+    
+    .footer {
+        padding-top: 6%;
     }
 }
