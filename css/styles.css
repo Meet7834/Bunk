@@ -49,3 +49,24 @@
     display: inline;
     /* font-size: 1rem; */
 }
+
+.middle {
+    display: none;
+}
+
+@media (max-width: 576px){
+    .main-div{
+        padding: 1rem;
+        margin-top: 3%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    .main-heading{
+        margin-top: 6%;
+    }
+
+    .credit {
+        display: block;
+    }
+}
