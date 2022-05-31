@@ -1,3 +1,29 @@
+body {
+    background-color: #8acdef;
+    background: linear-gradient(#8acdefe7, #9dcbe28a), url(../images/B1.jpg);
+    color: #1572A1;
+}
+
+#formDiv {
+    background-color: #ffffff82;
+}
+
+
+/* input[type="number"],
+textarea {
+    background-color: #efdad768;
+} */
+
+#btn1 {
+    border: 1px solid #1572A1;
+    color: #1572A1;
+}
+
+#btn1:hover {
+    background-color: #1572A1;
+    color: aliceblue;
+}
+
 .main-div {
     padding: 1rem;
     margin-top: 2%;
@@ -21,14 +47,15 @@
     margin-top: 1rem;
 }
 
-.output-result{
+.output-result {
     /* display: flex;
     justify-content: center; */
     padding-top: 1rem;
     text-align: center;
     font-size: 1.5rem;
 }
-.output-result2{
+
+.output-result2 {
     /* display: flex;
     justify-content: center; */
     /* padding-top: 1rem; */
@@ -36,16 +63,17 @@
     font-size: 1.5rem;
 }
 
+
 /* #Temp {
     color: aquamarine;
 } */
 
-.footer{
+.footer {
     padding: 3% 0 0 0;
     text-align: center;
 }
 
-.credit{
+.credit {
     display: inline;
     /* font-size: 1rem; */
 }
