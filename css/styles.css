@@ -1,28 +1,41 @@
 body {
-    background-color: #8acdef;
-    background: linear-gradient(#8acdefe7, #9dcbe28a), url(../images/B1.jpg);
-    color: #1572A1;
+    background: linear-gradient(-45deg, #20e834, #e73c7e, #23a6d5, #f2ff00);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    font-size: 1rem;
+    font-family: Raleway;
+    color: black;
+    font-weight: 500;
+    /* text-shadow: 1px -1px 6px rgba(123,124,124,0.73); */
+}
+
+h1{
+    color: white;
+    font-family: Comfortaa;
+    font-weight: bold;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #formDiv {
     background-color: #ffffff82;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-
-/* input[type="number"],
-textarea {
-    background-color: #efdad768;
-} */
-
-#btn1 {
-    border: 1px solid #1572A1;
-    color: #1572A1;
-}
-
-#btn1:hover {
-    background-color: #1572A1;
-    color: aliceblue;
-}
 
 .main-div {
     padding: 1rem;
@@ -33,12 +46,11 @@ textarea {
 
 .main-heading {
     text-align: center;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 .warning {
-    font-size: 0.8rem;
-    color: rgb(184, 78, 78);
+    font-size: 0.82rem;
 }
 
 .centre-button {
@@ -48,25 +60,17 @@ textarea {
 }
 
 .output-result {
-    /* display: flex;
-    justify-content: center; */
     padding-top: 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 .output-result2 {
-    /* display: flex;
-    justify-content: center; */
-    /* padding-top: 1rem; */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
-
-
-/* #Temp {
-    color: aquamarine;
-} */
 
 .footer {
     padding: 3% 0 0 0;
@@ -75,9 +79,9 @@ textarea {
 
 .credit {
     display: inline;
-    /* font-size: 1rem; */
+    color: white;
+    font-family: Comfortaa;
 }
-
 
 @media (max-width: 576px){
     .main-div{
